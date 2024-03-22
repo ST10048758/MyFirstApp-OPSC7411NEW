@@ -9,7 +9,7 @@ import com.example.myfirstapp_opsc7411.databinding.ActivityOrderDetailsBinding
 
 class OrderDetailsActivity : AppCompatActivity() {
     var order = Order()
-
+    var hello: String = "Hello"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +26,7 @@ class OrderDetailsActivity : AppCompatActivity() {
             "Rainbow Frapp" -> binding.imgSelectedDrink.setImageResource(R.drawable.sb4)
             "Caramel Frapp" -> binding.imgSelectedDrink.setImageResource(R.drawable.sb5)
             "Black Forest Frapp" -> binding.imgSelectedDrink.setImageResource(R.drawable.sb6)
+
         }
 
         binding.fab.setOnClickListener(){
